@@ -5,10 +5,14 @@ shopt -s nocaseglob
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-export GREP_OPTIONS='--color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Prevent less from clearing the screen while still showing colors.
 export LESS=-XR
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Set the terminal's title bar.
 function titlebar() {

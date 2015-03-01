@@ -1,0 +1,1 @@
+[[ -s "/home/airborn/.gvm/bin/gvm-init.sh" ]] && source "/home/airborn/.gvm/bin/gvm-init.sh"
